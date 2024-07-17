@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>               
+ 
+  <title>Contact Page</title>
+  <style>
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, textarea {
+      width: 20%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #000000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+	body{
+	background-color:#a9cbee;
+	
+	}
+	p{
+	text-align:center;
+	}
+	form{
+	text-align:center;
+	}
+	img{
+	width:3000px;
+	height:200px;
+	}
+	.blue-color{
+	color:blue;
+	}
+	button{
+	background-color:lightblue;
+	}
+	
+  </style>
+</head>
+<body>
+<p><b>CONTACT US </b></p> 
+
+<p><i class='fa fa-instagram blue-color'>the_penguin_pallete</i></p>
+<p><b>Address:11/7 sugar camp rode</b></p>
+<p> <b>Phone number:9842344704</b></p>
+<p><b>Email:vivepri@gmail.com</b></p>
+
+
+  <form  onsubmit="return validateForm()">
+  
+   
+    <label for="name">Name:</label>
+    <input type="name" id="name" name="name" placeholder="enter your name"><br>
+	<label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="enter your email"><br>
+	<label for="number">Phone number:</label>
+    <input type="number" id="phonenumber" name="phonenumber" placeholder="enter your phonenumber"><br>
+	<label for="message">Your Suggestion:</label>
+    <textarea id="message" name="message" rows="4" placeholder="enter your suggestion"></textarea><br>
+    <button onclick="myFunction()">SUBMIT</button>
+	<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var phonenumber = document.getElementById("phonenumber").value;
+  var message = document.getElementById("message").value;
+
+  if (name == "" || email == "" || phonenumber == "" || message == "") {
+    alert("Please fill in all the fields.");
+    return false;
+  }
+  else{
+   alert(" thanks! your suggestion will be taken into consideration.");
+   }
+   return true;
+}
+</script>
+	
+
+
+</script>
+  </form>
+</body>
+</html>
